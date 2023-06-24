@@ -1,0 +1,5 @@
+//@version=5
+indicator(title="Relative Strength Index", shorttitle="RSI", format=format.price, precision=2, timeframe="", timeframe_gaps=true)
+
+rsiupdown = ta.rsi(close,14)
+plot(rsiupdown)
